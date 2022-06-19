@@ -1,0 +1,641 @@
+2022-06-19 11:59:49.201  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 11:59:49.231  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 11:59:50.347  INFO 1948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-19 11:59:50.349  INFO 1948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-19 11:59:57.947  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 11:59:59.604  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 1318 ms. Found 1 JPA repository interfaces.
+2022-06-19 12:00:05.003  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 12:00:05.435  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 12:00:05.436  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 12:00:06.626  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 12:00:06.718  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 16360 ms
+2022-06-19 12:00:08.638  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 12:00:08.884  INFO 1948 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-19 12:00:09.669  INFO 1948 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-19 12:00:10.032  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-19 12:00:10.957  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 12:00:10.965  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-19 12:00:11.136  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 12:00:12.708  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 12:00:12.734  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 12:00:13.645  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 12:00:14.363  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 12:00:14.513  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 12:00:14.537  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 28.139 seconds (JVM running for 38.508)
+2022-06-19 12:00:47.767  INFO 1948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 12:00:47.768  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-19 12:00:47.769  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-19 12:03:50.331  INFO 1948 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 12:03:50.345  INFO 1948 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-19 12:03:50.394  INFO 1948 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-19 12:03:50.640  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 12:03:50.641  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 12:03:51.420  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 12:03:51.439  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-06-19 12:03:51.605  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 12:03:51.606  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 12:03:51.607  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 12:03:51.674  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 12:03:51.675  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1029 ms
+2022-06-19 12:03:51.766  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 12:03:51.775  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-06-19 12:03:51.785  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 12:03:51.786  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-06-19 12:03:51.787  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 12:03:51.847  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 12:03:51.847  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 12:03:51.982  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 12:03:52.136  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 12:03:52.164  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 12:03:52.173  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 1.606 seconds (JVM running for 256.143)
+2022-06-19 12:03:52.177  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 12:06:47.161  INFO 1948 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 12:06:47.163  INFO 1948 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-06-19 12:06:47.168  INFO 1948 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-06-19 12:06:47.300  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 12:06:47.301  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 12:06:47.565  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 12:06:47.577  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2022-06-19 12:06:47.713  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 12:06:47.714  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 12:06:47.715  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 12:06:47.752  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 12:06:47.752  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 446 ms
+2022-06-19 12:06:47.797  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 12:06:47.805  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-06-19 12:06:47.812  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-3 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 12:06:47.814  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-06-19 12:06:47.814  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 12:06:47.922  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 12:06:47.923  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 12:06:48.060  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 12:06:48.192  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 12:06:48.216  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 12:06:48.229  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 0.974 seconds (JVM running for 432.2)
+2022-06-19 12:06:48.236  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 12:07:57.219  INFO 1948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 12:07:57.220  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-19 12:07:57.221  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-19 12:07:57.228  INFO 1948 --- [http-nio-8080-exec-1] c.d.s.controller.StudentController       : Removed student() method invoked
+2022-06-19 12:07:57.243  INFO 1948 --- [http-nio-8080-exec-1] c.d.s.service.StudentServiceImpl         : student data deleted
+2022-06-19 12:08:37.946  INFO 1948 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 12:08:37.948  INFO 1948 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-06-19 12:08:37.954  INFO 1948 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-06-19 12:08:38.084  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 12:08:38.084  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 12:08:38.341  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 12:08:38.352  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2022-06-19 12:08:38.487  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 12:08:38.488  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 12:08:38.488  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 12:08:38.547  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 12:08:38.547  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 458 ms
+2022-06-19 12:08:38.590  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 12:08:38.601  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-06-19 12:08:38.608  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-4 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 12:08:38.610  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-06-19 12:08:38.610  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 12:08:38.678  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 12:08:38.678  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 12:08:38.815  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 12:08:38.937  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 12:08:38.954  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 12:08:38.981  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 0.941 seconds (JVM running for 542.951)
+2022-06-19 12:08:38.985  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 12:34:14.149  INFO 1948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 12:34:14.151  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-19 12:34:14.153  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-06-19 12:34:24.279  INFO 1948 --- [http-nio-8080-exec-3] c.d.s.controller.StudentController       : inside controller!!! getStudent()
+2022-06-19 12:39:44.057  INFO 1948 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 12:39:44.058  INFO 1948 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-06-19 12:39:44.062  INFO 1948 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-06-19 12:39:46.238  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 12:39:46.239  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 12:39:49.644  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 12:39:49.655  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2022-06-19 12:39:50.054  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 12:39:50.056  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 12:39:50.056  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 12:39:50.088  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 12:39:50.088  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3688 ms
+2022-06-19 12:39:50.149  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 12:39:50.172  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2022-06-19 12:39:50.178  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-5 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 12:39:50.179  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2022-06-19 12:39:50.180  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 12:39:50.361  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 12:39:50.361  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 12:39:50.583  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 12:39:50.776  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 12:39:50.792  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 12:39:50.840  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 6.019 seconds (JVM running for 2414.81)
+2022-06-19 12:39:50.843  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 12:40:01.056  INFO 1948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 12:40:01.057  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-19 12:40:01.064  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2022-06-19 12:40:01.069  INFO 1948 --- [http-nio-8080-exec-1] c.d.s.controller.StudentController       : inside controller!!! getStudent()
+2022-06-19 12:40:01.069 DEBUG 1948 --- [http-nio-8080-exec-1] c.d.s.service.StudentServiceImpl         : Authenticating student by ID
+2022-06-19 12:44:44.692  INFO 1948 --- [Thread-20] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 12:44:44.696  INFO 1948 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2022-06-19 12:44:44.725  INFO 1948 --- [Thread-20] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2022-06-19 12:44:45.273  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 12:44:45.273  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 12:44:45.631  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 12:44:45.671  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 20 ms. Found 1 JPA repository interfaces.
+2022-06-19 12:44:45.954  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 12:44:45.956  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 12:44:45.956  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 12:44:45.987  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 12:44:45.987  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 711 ms
+2022-06-19 12:44:46.031  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 12:44:46.038  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2022-06-19 12:44:46.046  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-6 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 12:44:46.047  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2022-06-19 12:44:46.047  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 12:44:46.185  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 12:44:46.186  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 12:44:46.427  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 12:44:46.603  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 12:44:46.617  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 12:44:46.625  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 1.503 seconds (JVM running for 2710.595)
+2022-06-19 12:44:46.627  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 12:48:52.614  INFO 1948 --- [Thread-24] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 12:48:52.615  INFO 1948 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown initiated...
+2022-06-19 12:48:52.619  INFO 1948 --- [Thread-24] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Shutdown completed.
+2022-06-19 12:48:52.764  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 12:48:52.765  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 12:48:53.131  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 12:48:53.142  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2022-06-19 12:48:53.331  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 12:48:53.332  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 12:48:53.332  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 12:48:53.363  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 12:48:53.363  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 584 ms
+2022-06-19 12:48:53.405  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 12:48:53.413  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Starting...
+2022-06-19 12:48:53.418  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-7 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 12:48:53.419  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Start completed.
+2022-06-19 12:48:53.420  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 12:48:53.526  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 12:48:53.526  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 12:48:53.672  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 12:48:53.789  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 12:48:53.805  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 12:48:53.814  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 1.094 seconds (JVM running for 2957.785)
+2022-06-19 12:48:53.817  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:05:27.574  INFO 1948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 13:05:27.577  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-19 13:05:27.607  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
+2022-06-19 13:05:27.642  INFO 1948 --- [http-nio-8080-exec-1] c.d.s.controller.StudentController       : inside controller!!! getStudent()
+2022-06-19 13:05:27.642 DEBUG 1948 --- [http-nio-8080-exec-1] c.d.s.service.StudentServiceImpl         : Authenticating student by ID
+2022-06-19 13:07:09.070  INFO 1948 --- [Thread-28] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:07:09.078  INFO 1948 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown initiated...
+2022-06-19 13:07:09.090  INFO 1948 --- [Thread-28] com.zaxxer.hikari.HikariDataSource       : HikariPool-7 - Shutdown completed.
+2022-06-19 13:07:10.843  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:07:10.844  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:07:12.393  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:07:12.404  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:07:12.824  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:07:12.825  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:07:12.825  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:07:18.404  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:07:18.404  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7555 ms
+2022-06-19 13:07:18.465  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:07:18.473  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Starting...
+2022-06-19 13:07:18.480  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-8 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:07:18.481  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Start completed.
+2022-06-19 13:07:18.481  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:07:18.617  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:07:18.618  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:07:18.860  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:07:19.618  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:07:19.800  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:07:19.809  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 9.192 seconds (JVM running for 4063.779)
+2022-06-19 13:07:19.811  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:07:22.548  INFO 1948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 13:07:22.549  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-19 13:07:22.551  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-06-19 13:07:22.554  INFO 1948 --- [http-nio-8080-exec-1] c.d.s.controller.StudentController       : inside controller!!! getStudent()
+2022-06-19 13:07:22.555 DEBUG 1948 --- [http-nio-8080-exec-1] c.d.s.service.StudentServiceImpl         : Authenticating student by ID :2
+2022-06-19 13:09:40.658  INFO 1948 --- [Thread-32] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:09:40.659  INFO 1948 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown initiated...
+2022-06-19 13:09:40.665  INFO 1948 --- [Thread-32] com.zaxxer.hikari.HikariDataSource       : HikariPool-8 - Shutdown completed.
+2022-06-19 13:09:40.839  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:09:40.839  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:09:41.096  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:09:41.107  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:09:41.479  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:09:41.480  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:09:41.482  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:09:41.520  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:09:41.520  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 678 ms
+2022-06-19 13:09:41.576  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:09:41.585  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Starting...
+2022-06-19 13:09:41.591  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-9 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:09:41.593  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Start completed.
+2022-06-19 13:09:41.593  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:09:41.745  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:09:41.746  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:09:41.874  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:09:42.076  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:09:42.167  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:09:42.192  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 1.398 seconds (JVM running for 4206.161)
+2022-06-19 13:09:42.195  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:10:12.704  INFO 1948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-06-19 13:10:12.705  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-06-19 13:10:12.708  INFO 1948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-06-19 13:10:13.303  INFO 1948 --- [http-nio-8080-exec-1] c.d.s.controller.StudentController       : inside controller addstudent() method
+2022-06-19 13:10:13.303  INFO 1948 --- [http-nio-8080-exec-1] c.d.s.service.StudentServiceImpl         : inside service layer addstudent() method : daffy
+2022-06-19 13:10:13.682  INFO 1948 --- [http-nio-8080-exec-1] c.d.s.controller.StudentController       : Student data saved successfully
+2022-06-19 13:19:23.951  INFO 1948 --- [Thread-36] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:19:23.952  INFO 1948 --- [Thread-36] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown initiated...
+2022-06-19 13:19:23.957  INFO 1948 --- [Thread-36] com.zaxxer.hikari.HikariDataSource       : HikariPool-9 - Shutdown completed.
+2022-06-19 13:19:24.223  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:19:24.223  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:19:24.503  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:19:24.513  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:19:24.649  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:19:24.650  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:19:24.650  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:19:24.696  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:19:24.696  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 465 ms
+2022-06-19 13:19:24.749  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:19:24.756  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Starting...
+2022-06-19 13:19:24.762  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-10 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:19:24.763  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Start completed.
+2022-06-19 13:19:24.763  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:19:24.843  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:19:24.843  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:19:24.993  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:19:25.114  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:19:25.129  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:19:25.136  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 1.036 seconds (JVM running for 4789.106)
+2022-06-19 13:19:25.137  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:20:28.513  INFO 1948 --- [Thread-40] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:20:28.515  INFO 1948 --- [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown initiated...
+2022-06-19 13:20:28.522  INFO 1948 --- [Thread-40] com.zaxxer.hikari.HikariDataSource       : HikariPool-10 - Shutdown completed.
+2022-06-19 13:20:28.653  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:20:28.653  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:20:28.944  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:20:28.963  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 18 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:20:29.107  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:20:29.108  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:20:29.108  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:20:29.154  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:20:29.154  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 498 ms
+2022-06-19 13:20:29.199  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:20:29.205  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Starting...
+2022-06-19 13:20:29.215  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-11 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:20:29.216  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Start completed.
+2022-06-19 13:20:29.217  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:20:29.853  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:20:29.853  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:20:29.978  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:20:30.302  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:20:30.325  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:20:30.341  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 1.729 seconds (JVM running for 4854.311)
+2022-06-19 13:20:30.350  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:21:09.449  INFO 1948 --- [Thread-44] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:21:09.450  INFO 1948 --- [Thread-44] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown initiated...
+2022-06-19 13:21:09.454  INFO 1948 --- [Thread-44] com.zaxxer.hikari.HikariDataSource       : HikariPool-11 - Shutdown completed.
+2022-06-19 13:21:09.650  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:21:09.650  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:21:09.892  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:21:09.902  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:21:10.026  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:21:10.028  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:21:10.028  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:21:10.073  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:21:10.073  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 420 ms
+2022-06-19 13:21:10.114  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:21:10.121  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Starting...
+2022-06-19 13:21:10.135  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-12 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:21:10.136  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Start completed.
+2022-06-19 13:21:10.136  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:21:10.222  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:21:10.222  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:21:10.356  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:21:10.476  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:21:10.491  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:21:10.502  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 0.895 seconds (JVM running for 4894.471)
+2022-06-19 13:21:10.505  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:22:41.880  INFO 1948 --- [Thread-48] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:22:41.881  INFO 1948 --- [Thread-48] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown initiated...
+2022-06-19 13:22:41.884  INFO 1948 --- [Thread-48] com.zaxxer.hikari.HikariDataSource       : HikariPool-12 - Shutdown completed.
+2022-06-19 13:22:42.006  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:22:42.006  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:22:42.243  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:22:42.253  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:22:42.398  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:22:42.399  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:22:42.399  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:22:42.443  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:22:42.443  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 433 ms
+2022-06-19 13:22:42.485  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:22:42.492  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Starting...
+2022-06-19 13:22:42.497  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-13 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:22:42.497  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Start completed.
+2022-06-19 13:22:42.497  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:22:42.646  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:22:42.647  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:22:42.743  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:22:42.866  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:22:42.880  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:22:42.889  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 0.924 seconds (JVM running for 4986.859)
+2022-06-19 13:22:42.893  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:22:54.487  INFO 1948 --- [Thread-52] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:22:54.490  INFO 1948 --- [Thread-52] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown initiated...
+2022-06-19 13:22:54.497  INFO 1948 --- [Thread-52] com.zaxxer.hikari.HikariDataSource       : HikariPool-13 - Shutdown completed.
+2022-06-19 13:22:54.625  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:22:54.626  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:22:54.859  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:22:54.869  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:22:55.012  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:22:55.013  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:22:55.013  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:22:55.066  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:22:55.066  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 438 ms
+2022-06-19 13:22:55.107  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:22:55.114  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Starting...
+2022-06-19 13:22:55.119  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-14 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:22:55.119  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Start completed.
+2022-06-19 13:22:55.120  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:22:55.238  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:22:55.238  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:22:55.337  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:22:55.449  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:22:55.463  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:22:55.472  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 0.888 seconds (JVM running for 4999.442)
+2022-06-19 13:22:55.474  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:24:03.151  INFO 1948 --- [Thread-56] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:24:03.152  INFO 1948 --- [Thread-56] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown initiated...
+2022-06-19 13:24:03.156  INFO 1948 --- [Thread-56] com.zaxxer.hikari.HikariDataSource       : HikariPool-14 - Shutdown completed.
+2022-06-19 13:24:03.304  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:24:03.305  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:24:03.574  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:24:03.587  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:24:03.766  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:24:03.768  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:24:03.768  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:24:03.832  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:24:03.832  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 523 ms
+2022-06-19 13:24:03.901  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:24:03.918  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Starting...
+2022-06-19 13:24:03.926  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-15 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:24:03.927  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Start completed.
+2022-06-19 13:24:03.927  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:24:04.036  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:24:04.036  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:24:04.197  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:24:04.334  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:24:04.349  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:24:04.357  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 1.105 seconds (JVM running for 5068.326)
+2022-06-19 13:24:04.358  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:24:11.993  INFO 1948 --- [Thread-60] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:24:11.996  INFO 1948 --- [Thread-60] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown initiated...
+2022-06-19 13:24:12.004  INFO 1948 --- [Thread-60] com.zaxxer.hikari.HikariDataSource       : HikariPool-15 - Shutdown completed.
+2022-06-19 13:24:12.140  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 1948 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:24:12.141  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:24:12.372  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:24:12.383  INFO 1948 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:24:12.505  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:24:12.505  INFO 1948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:24:12.505  INFO 1948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:24:12.546  INFO 1948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:24:12.546  INFO 1948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 402 ms
+2022-06-19 13:24:12.585  INFO 1948 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:24:12.592  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Starting...
+2022-06-19 13:24:12.598  INFO 1948 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-16 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:24:12.598  INFO 1948 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Start completed.
+2022-06-19 13:24:12.599  INFO 1948 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:24:12.640  INFO 1948 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:24:12.640  INFO 1948 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:24:12.746  WARN 1948 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:24:12.865  INFO 1948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:24:12.879  INFO 1948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:24:12.886  INFO 1948 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 0.785 seconds (JVM running for 5076.856)
+2022-06-19 13:24:12.888  INFO 1948 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:25:36.170  INFO 1948 --- [RMI TCP Connection(133)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-06-19 13:25:36.211  INFO 1948 --- [RMI TCP Connection(133)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:25:36.212  INFO 1948 --- [RMI TCP Connection(133)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown initiated...
+2022-06-19 13:25:36.215  INFO 1948 --- [RMI TCP Connection(133)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-16 - Shutdown completed.
+2022-06-19 13:26:28.740  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 4332 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:26:28.742  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:26:29.810  INFO 4332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-19 13:26:29.811  INFO 4332 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-19 13:26:34.413  INFO 4332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:26:35.325  INFO 4332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 804 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:26:39.687  INFO 4332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:26:39.999  INFO 4332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:26:39.999  INFO 4332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:26:40.538  INFO 4332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:26:40.538  INFO 4332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 10719 ms
+2022-06-19 13:26:42.483  INFO 4332 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:26:43.626  INFO 4332 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-19 13:26:48.011  INFO 4332 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-19 13:26:49.203  INFO 4332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-19 13:26:49.996  INFO 4332 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:26:50.000  INFO 4332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-19 13:26:50.455  INFO 4332 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:26:56.213  INFO 4332 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:26:56.244  INFO 4332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:26:58.319  WARN 4332 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:27:03.912  INFO 4332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:27:04.635  INFO 4332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:27:04.658  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 40.093 seconds (JVM running for 43.588)
+2022-06-19 13:27:11.476  INFO 4332 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:27:11.482  INFO 4332 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-19 13:27:11.532  INFO 4332 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-19 13:27:11.677  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 4332 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:27:11.678  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:27:12.040  INFO 4332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:27:12.056  INFO 4332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 14 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:27:12.240  INFO 4332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:27:12.241  INFO 4332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:27:12.241  INFO 4332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:27:12.284  INFO 4332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:27:12.285  INFO 4332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 603 ms
+2022-06-19 13:27:12.361  INFO 4332 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:27:12.370  INFO 4332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-06-19 13:27:12.378  INFO 4332 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:27:12.380  INFO 4332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-06-19 13:27:12.380  INFO 4332 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:27:12.533  INFO 4332 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:27:12.533  INFO 4332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:27:12.674  WARN 4332 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:27:12.819  INFO 4332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:27:12.836  INFO 4332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:27:12.852  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 1.224 seconds (JVM running for 51.781)
+2022-06-19 13:27:12.856  INFO 4332 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:27:56.059  INFO 4332 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:27:56.062  INFO 4332 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-06-19 13:27:56.068  INFO 4332 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-06-19 13:27:56.202  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 4332 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:27:56.203  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:27:56.471  INFO 4332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:27:56.483  INFO 4332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:27:56.662  INFO 4332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:27:56.664  INFO 4332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:27:56.664  INFO 4332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:27:56.701  INFO 4332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:27:56.702  INFO 4332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 494 ms
+2022-06-19 13:27:56.747  INFO 4332 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:27:56.755  INFO 4332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-06-19 13:27:56.763  INFO 4332 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-3 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:27:56.764  INFO 4332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-06-19 13:27:56.764  INFO 4332 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:27:56.834  INFO 4332 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:27:56.834  INFO 4332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:27:56.971  WARN 4332 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:27:57.102  INFO 4332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:27:57.119  INFO 4332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:27:57.131  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 0.974 seconds (JVM running for 96.06)
+2022-06-19 13:27:57.136  INFO 4332 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:29:20.352  INFO 4332 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:29:20.354  INFO 4332 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-06-19 13:29:20.358  INFO 4332 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-06-19 13:29:20.483  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 4332 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:29:20.484  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:29:20.739  INFO 4332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:29:20.751  INFO 4332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:29:20.888  INFO 4332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:29:20.889  INFO 4332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:29:20.889  INFO 4332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:29:20.924  INFO 4332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:29:20.925  INFO 4332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 437 ms
+2022-06-19 13:29:20.971  INFO 4332 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:29:20.980  INFO 4332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-06-19 13:29:20.987  INFO 4332 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-4 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:29:20.988  INFO 4332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-06-19 13:29:20.988  INFO 4332 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:29:21.070  INFO 4332 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:29:21.071  INFO 4332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:29:21.198  WARN 4332 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:29:21.320  INFO 4332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:29:21.337  INFO 4332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:29:21.344  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 0.91 seconds (JVM running for 180.273)
+2022-06-19 13:29:21.354  INFO 4332 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:29:41.088  INFO 4332 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:29:41.089  INFO 4332 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2022-06-19 13:29:41.094  INFO 4332 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2022-06-19 13:29:41.214  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 4332 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:29:41.214  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:29:41.461  INFO 4332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:29:41.471  INFO 4332 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:29:41.596  INFO 4332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:29:41.597  INFO 4332 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:29:41.598  INFO 4332 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:29:41.629  INFO 4332 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:29:41.630  INFO 4332 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 412 ms
+2022-06-19 13:29:41.673  INFO 4332 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:29:41.683  INFO 4332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2022-06-19 13:29:41.689  INFO 4332 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-5 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:29:41.690  INFO 4332 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2022-06-19 13:29:41.690  INFO 4332 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:29:41.785  INFO 4332 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:29:41.786  INFO 4332 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:29:41.905  WARN 4332 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:29:42.021  INFO 4332 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:29:42.036  INFO 4332 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:29:42.043  INFO 4332 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 0.876 seconds (JVM running for 200.972)
+2022-06-19 13:29:42.046  INFO 4332 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:29:45.945  INFO 4332 --- [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-06-19 13:29:45.967  INFO 4332 --- [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:29:45.968  INFO 4332 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2022-06-19 13:29:45.972  INFO 4332 --- [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2022-06-19 13:33:59.672  INFO 5624 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 5624 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:33:59.686  INFO 5624 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:33:59.796  INFO 5624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-06-19 13:33:59.797  INFO 5624 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-06-19 13:34:01.157  INFO 5624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:34:01.255  INFO 5624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 82 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:34:02.717  INFO 5624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:34:02.772  INFO 5624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:34:02.773  INFO 5624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:34:03.043  INFO 5624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:34:03.044  INFO 5624 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3244 ms
+2022-06-19 13:34:03.474  INFO 5624 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:34:03.666  INFO 5624 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-06-19 13:34:04.255  INFO 5624 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-06-19 13:34:04.644  INFO 5624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-06-19 13:34:04.947  INFO 5624 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:34:04.951  INFO 5624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-06-19 13:34:05.036  INFO 5624 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:34:06.589  INFO 5624 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:34:06.604  INFO 5624 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:34:07.235  WARN 5624 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:34:07.754  INFO 5624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:34:07.870  INFO 5624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:34:07.889  INFO 5624 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 8.919 seconds (JVM running for 10.373)
+2022-06-19 13:37:09.847  INFO 5624 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:37:09.858  INFO 5624 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-06-19 13:37:10.050  INFO 5624 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-06-19 13:37:10.781  INFO 5624 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 5624 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:37:10.782  INFO 5624 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:37:11.238  INFO 5624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:37:11.250  INFO 5624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:37:11.597  INFO 5624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:37:11.598  INFO 5624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:37:11.599  INFO 5624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:37:11.652  INFO 5624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:37:11.652  INFO 5624 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 864 ms
+2022-06-19 13:37:11.704  INFO 5624 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:37:11.712  INFO 5624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2022-06-19 13:37:11.720  INFO 5624 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-2 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:37:11.722  INFO 5624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2022-06-19 13:37:11.722  INFO 5624 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:37:12.180  INFO 5624 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:37:12.181  INFO 5624 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:37:12.321  WARN 5624 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:37:12.471  INFO 5624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:37:12.488  INFO 5624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:37:12.503  INFO 5624 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 1.931 seconds (JVM running for 194.988)
+2022-06-19 13:37:12.508  INFO 5624 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:47:25.381  INFO 5624 --- [Thread-8] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:47:25.382  INFO 5624 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2022-06-19 13:47:25.386  INFO 5624 --- [Thread-8] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2022-06-19 13:47:25.934  INFO 5624 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 5624 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:47:25.934  INFO 5624 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:47:26.738  INFO 5624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:47:26.750  INFO 5624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:47:26.950  INFO 5624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:47:26.951  INFO 5624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:47:26.952  INFO 5624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:47:26.993  INFO 5624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:47:26.993  INFO 5624 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1054 ms
+2022-06-19 13:47:27.042  INFO 5624 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:47:27.050  INFO 5624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2022-06-19 13:47:27.058  INFO 5624 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-3 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:47:27.059  INFO 5624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2022-06-19 13:47:27.060  INFO 5624 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:47:27.538  INFO 5624 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:47:27.539  INFO 5624 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:47:27.745  WARN 5624 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:47:27.944  INFO 5624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:47:27.966  INFO 5624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:47:27.976  INFO 5624 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 2.099 seconds (JVM running for 810.461)
+2022-06-19 13:47:27.978  INFO 5624 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-06-19 13:50:12.536  INFO 5624 --- [Thread-12] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:50:12.538  INFO 5624 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2022-06-19 13:50:12.542  INFO 5624 --- [Thread-12] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2022-06-19 13:50:12.678  INFO 5624 --- [restartedMain] c.d.s.StudentManagementApplication       : Starting StudentManagementApplication using Java 14.0.2 on DESKTOP-5DNE60J with PID 5624 (D:\SPRINGBOOT_workspace\StudentManagementApplication\target\classes started by User in D:\SPRINGBOOT_workspace\StudentManagementApplication)
+2022-06-19 13:50:12.679  INFO 5624 --- [restartedMain] c.d.s.StudentManagementApplication       : No active profile set, falling back to 1 default profile: "default"
+2022-06-19 13:50:12.968  INFO 5624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-06-19 13:50:12.980  INFO 5624 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 11 ms. Found 1 JPA repository interfaces.
+2022-06-19 13:50:13.114  INFO 5624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-06-19 13:50:13.116  INFO 5624 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-06-19 13:50:13.116  INFO 5624 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2022-06-19 13:50:13.152  INFO 5624 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-06-19 13:50:13.152  INFO 5624 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 470 ms
+2022-06-19 13:50:13.197  INFO 5624 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-06-19 13:50:13.206  INFO 5624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2022-06-19 13:50:13.213  INFO 5624 --- [restartedMain] com.zaxxer.hikari.pool.PoolBase          : HikariPool-4 - Driver does not support get/set network timeout for connections. (Receiver class com.mysql.jdbc.JDBC4Connection does not define or inherit an implementation of the resolved method 'abstract int getNetworkTimeout()' of interface java.sql.Connection.)
+2022-06-19 13:50:13.214  INFO 5624 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2022-06-19 13:50:13.214  INFO 5624 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2022-06-19 13:50:13.421  INFO 5624 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-06-19 13:50:13.421  INFO 5624 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-06-19 13:50:13.546  WARN 5624 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-06-19 13:50:13.685  INFO 5624 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-06-19 13:50:13.702  INFO 5624 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-06-19 13:50:13.711  INFO 5624 --- [restartedMain] c.d.s.StudentManagementApplication       : Started StudentManagementApplication in 1.081 seconds (JVM running for 976.197)
+2022-06-19 13:50:13.716  INFO 5624 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
